@@ -1,7 +1,10 @@
 import Head from "next/head"
+import { Container, Main } from "@/components/sharedstyles"
+import { Nav } from "@/components/Navigation/Nav.styled"
 
 export default function Home() {
   return (
+    <Container>
       <Head>
         <title>Upflow test</title>
         <meta
@@ -10,5 +13,8 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Nav />
+      <Main></Main>
+    </Container>
   )
 }
