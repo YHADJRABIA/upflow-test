@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 const Container = styled.div`
-  padding: 0 0.5rem;
+  margin: 0 57px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
