@@ -9,6 +9,10 @@ interface PropTypes extends ImageProps {
 
 const Container = styled.div`
   margin: 7px 0;
+  transition: transform 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
 `
 
 export const Logo: FC<PropTypes & LinkProps> = ({ href, src, title }) => (

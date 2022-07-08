@@ -30,6 +30,12 @@ const Item = styled.li`
     cursor: pointer;
     margin-left: 10px !important;
   }
+  a {
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
 `
 
 export const Menu: FC<PropTypes> = ({ links }) => (
