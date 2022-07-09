@@ -1,6 +1,7 @@
 import Head from "next/head"
 import { Container, Main } from "@/components/sharedstyles"
 import { Nav } from "@/components/Navigation/Nav.styled"
+import { Hero } from "@/components/Hero/Hero.styled"
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav />
+      <Hero />
       <Main></Main>
     </Container>
   )
