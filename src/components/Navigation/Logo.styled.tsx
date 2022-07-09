@@ -2,6 +2,7 @@ import { FC } from "react"
 import styled from "styled-components"
 import Image, { ImageProps } from "next/image"
 import Link, { LinkProps } from "next/link"
+import { preventSelection } from "../sharedstyles"
 
 interface PropTypes extends ImageProps {
   title?: string
@@ -13,6 +14,7 @@ const Container = styled.div`
   &:hover {
     transform: scale(1.05);
   }
+  ${preventSelection}
 `
 
 export const Logo: FC<PropTypes & LinkProps> = ({ href, src, title }) => (
