@@ -6,13 +6,8 @@ import { CustomLink } from "../UI/Link.styled"
 const Container = styled.div`
   display: flex;
   align-items: center;
-
-  a {
-    transition: transform 0.2s ease-in-out;
+  > a {
     margin-right: 24px;
-    &:hover {
-      transform: scale(1.05);
-    }
   }
 `
 

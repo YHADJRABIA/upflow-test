@@ -24,11 +24,12 @@ export const Button = styled.a<PropTypes>`
   box-shadow: 0px 2px 5px rgba(27, 27, 26, 0.08),
     0px 1px 1px rgba(27, 27, 26, 0.12),
     0px 0px 0px 1px ${({ color }) => color ?? "var(--primary-blue-color)"};
-  transition: background-color 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
 
   &:hover {
-    background-color: var(--secondary-blue-color);
+    opacity: 0.9;
   }
+  z-index: 1;
 `
 
 Button.defaultProps = {
