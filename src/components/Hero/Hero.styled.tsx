@@ -7,9 +7,9 @@ import { Title } from "./Title.styled"
 
 const tags = [
   { name: "Alexandre", color: "#FFB423", top: 70, right: 230 },
-  { name: "Lily", color: "#33D1EA", top: 85, left: 205 },
-  { name: "Bouba", color: "#179690", top: 175, right: 270 },
-  { name: "Charlotte", color: "#FF2E57", top: 185, left: 290 },
+  { name: "Lily", color: "var(--secondary-blue-color)", top: 85, left: 205 },
+  { name: "Bouba", color: "var(--primary-green-color)", top: 175, right: 270 },
+  { name: "Charlotte", color: "var(--primary-red-color)", top: 185, left: 290 },
 ]
 
 const Container = styled.div`
