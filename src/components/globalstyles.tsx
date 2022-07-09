@@ -25,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
     padding:0;
   }
 
+
   :root {
   // Colors
   --primary-white-color: #fff;
@@ -33,11 +34,15 @@ const GlobalStyle = createGlobalStyle`
   --primary-black-color: #1B1B1A;
   --secondary-black-color: #1b1a1a;
 
-  --primary-gray-color: #f2f2f5;
-  --secondary-gray-color: #adadad;
+  --primary-gray-color: #F2F1F0;
+  --secondary-gray-color: #FBFAF9;
 
   --primary-blue-color: #7348FF;
-  --secondary-blue-color: #0083ce;
+  --secondary-blue-color: #33D1EA;
+
+  --primary-red-color: #FF2E57;
+
+  --primary-green-color: #179690;
 
   --black-background: #000814;
 
