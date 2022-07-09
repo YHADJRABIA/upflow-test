@@ -8,6 +8,7 @@ import Spotify from "@/assets/spotify.svg"
 import Dropbox from "@/assets/dropbox.svg"
 import Github from "@/assets/github.svg"
 import Netflix from "@/assets/netflix.svg"
+import { preventSelection } from "../sharedstyles"
 
 interface PropTypes {
   text: string
@@ -45,11 +46,13 @@ const Logos = styled.div`
   color: var(--primary-black-color);
   margin-top: 32px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 
   & > span {
     cursor: pointer;
+    ${preventSelection}
     opacity: 0.5 !important;
     transition: opacity 0.2s ease-in-out;
     &:hover {
