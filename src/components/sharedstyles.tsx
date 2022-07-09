@@ -1,4 +1,17 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
+
+// Prevents user's selection of element
+const preventSelection = css`
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+
+  /* The rule below is not implemented in browsers yet */
+  -o-user-select: none;
+
+  /* The rule below is implemented in most browsers by now */
+  user-select: none;
+`
 
 const Container = styled.div`
   margin: 0 57px;
@@ -6,7 +19,6 @@ const Container = styled.div`
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   min-height: 100vh;
 `
 const Main = styled.main`
@@ -51,4 +63,4 @@ const CodeTag = styled.code`
     Bitstream Vera Sans Mono, Courier New, monospace;
 `
 
-export { Container, Main, Title, Description, CodeTag }
+export { Container, Main, Title, Description, CodeTag, preventSelection }
