@@ -2,6 +2,7 @@ import { FC } from "react"
 import styled from "styled-components"
 import { Subtitle } from "../UI/Subtitle.styled"
 import { Title } from "../UI/Title.styled"
+import { Content } from "./Content.styled"
 
 const Container = styled.section`
   margin-top: 104px;
@@ -13,8 +14,12 @@ const Container = styled.section`
   padding: 104px 64px 64px;
   width: 100%;
   min-height: 1708px;
-  h3 {
+
+  > h3 {
     margin-bottom: 24px;
+  }
+  > h4 {
+    max-width: 430px;
   }
 `
 
@@ -27,5 +32,6 @@ export const More: FC = () => (
       align="center"
       opacity={0.8}
     />
+    <Content />
   </Container>
 )

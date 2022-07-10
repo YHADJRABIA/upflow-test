@@ -15,7 +15,7 @@ const tags = [
 ]
 
 const Container = styled.div`
-  margin-top: 205px;
+  margin-top: 140px;
   margin-bottom: 203px;
   display: flex;
   flex-wrap: wrap;
