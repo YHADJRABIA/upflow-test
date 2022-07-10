@@ -1,8 +1,7 @@
-import { FC } from "react"
 import styled from "styled-components"
 import { blinkAnimation } from "../sharedstyles"
 
-const Container = styled.span`
+export const TypingCursor = styled.span`
   ${blinkAnimation}
   &:after {
     content: "";
@@ -10,7 +9,6 @@ const Container = styled.span`
     font-size: 16px;
     margin-left: 2px;
     border-right: solid 2px;
+    vertical-align: middle;
   }
 `
-
-export const TypingCursor: FC = () => <Container />
