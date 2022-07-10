@@ -6,7 +6,12 @@ import { Brands } from "./Brands.styled"
 import { Title } from "./Title.styled"
 
 const tags = [
-  { name: "Alexandre", color: "#FFB423", top: 70, right: 230 },
+  {
+    name: "Alexandre",
+    color: "var(--primary-yellow-color)",
+    top: 70,
+    right: 230,
+  },
   { name: "Lily", color: "var(--secondary-blue-color)", top: 85, left: 205 },
   { name: "Bouba", color: "var(--primary-green-color)", top: 175, right: 270 },
   { name: "Charlotte", color: "var(--primary-red-color)", top: 185, left: 290 },
@@ -20,6 +25,13 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+
+  > div:nth-child(-n + 4) {
+    transition: transform 0.3s ease-in;
+    &:hover {
+      transform: translateY(-15%);
+    }
+  }
 `
 
 export const Hero: FC = () => (
