@@ -1,8 +1,9 @@
 interface PropTypes {
   color?: string
+  strokeWidth?: number
 }
 
-export const Tickmark = ({ color, ...rest }: PropTypes) => {
+export const Tickmark = ({ color, strokeWidth, ...rest }: PropTypes) => {
   return (
     <svg
       width="16"
@@ -14,7 +15,7 @@ export const Tickmark = ({ color, ...rest }: PropTypes) => {
       <path
         d="M17 1.5L6 12.5L1 7.5"
         stroke={color ?? "var(--primary-black-color)"}
-        stroke-width="2"
+        stroke-width={strokeWidth ?? "2"}
         stroke-linecap="round"
         stroke-linejoin="round"
       />
