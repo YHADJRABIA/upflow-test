@@ -34,6 +34,7 @@ const List = styled.div`
     margin-bottom: 8px;
   }
   margin-bottom: 32px;
+  text-transform: capitalize;
 `
 
 export const Tags: FC = () => (

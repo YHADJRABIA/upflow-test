@@ -16,7 +16,6 @@ const Container = styled.div<PropTypes>`
   border-radius: 12px;
   color: ${({ color }) => color ?? "var(--secondary-blue-color)"};
   background-color: ${({ bgColor }) => bgColor ?? "var(--primary-white-color)"};
-  text-transform: capitalize;
   font-family: var(--regular-font);
   font-weight: 500;
   line-height: 40px;
