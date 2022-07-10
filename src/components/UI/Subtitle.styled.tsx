@@ -12,7 +12,6 @@ const Text = styled.h4<PropTypes>`
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  max-width: 475px;
   text-align: ${({ align }) => align ?? "left"};
   opacity: ${({ opacity }) => opacity ?? 1};
 `
