@@ -16,6 +16,7 @@ const Container = styled.nav`
   margin-top: 40px;
   height: 40px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 100%;
