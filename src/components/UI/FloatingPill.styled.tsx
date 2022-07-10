@@ -1,4 +1,4 @@
-import { Triangle } from "@/assets/triangle"
+import { Triangle } from "@/assets/Triangle"
 import { FC, ReactNode } from "react"
 import styled from "styled-components"
 
@@ -9,11 +9,14 @@ interface PropTypes {
   left?: number
   right?: number
   bottom?: number
+  zoom?: number
+  zIndex?: number
 }
 
 const Container = styled.div<PropTypes>`
   position: relative;
   cursor: pointer;
+  z-index: ${({ zIndex }) => zIndex ?? 1};
   top: ${({ top }) => (top ? `${top}px` : "")};
   left: ${({ left }) => (left ? `${left}px` : "")};
   right: ${({ right }) => (right ? `${right}px` : "")};
@@ -27,10 +30,7 @@ const Container = styled.div<PropTypes>`
   background-color: ${({ color }) => color};
   float: left;
   clear: left;
-  transition: transform 0.3s ease-in;
-  &:hover {
-    transform: translateY(-15%);
-  }
+  transform: ${({ zoom }) => (zoom ? `scale(${zoom})` : "")};
 
   svg {
     transform: translate(-60%, -50%);
@@ -55,8 +55,18 @@ export const FloatingPill: FC<PropTypes> = ({
   right,
   bottom,
   left,
+  zoom,
+  zIndex,
 }) => (
-  <Container top={top} right={right} bottom={bottom} left={left} color={color}>
+  <Container
+    top={top}
+    right={right}
+    bottom={bottom}
+    left={left}
+    color={color}
+    zoom={zoom}
+    zIndex={zIndex}
+  >
     <Triangle color={color} />
     <Text>{children}</Text>
   </Container>
