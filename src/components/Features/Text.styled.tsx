@@ -12,14 +12,16 @@ interface PropTypes {
 }
 
 const Container = styled.div`
-  margin-top: 86px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   max-width: 380px;
-  h3 {
+  > h3 {
     margin-top: 12px;
     margin-bottom: 24px;
+  }
+  > h4 {
+    max-width: 340px;
   }
 `
 
