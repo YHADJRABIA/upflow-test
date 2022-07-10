@@ -15,9 +15,9 @@ export const Tickmark = ({ color, strokeWidth, ...rest }: PropTypes) => {
       <path
         d="M17 1.5L6 12.5L1 7.5"
         stroke={color ?? "var(--primary-black-color)"}
-        stroke-width={strokeWidth ?? "2"}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth ?? "2"}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   )
