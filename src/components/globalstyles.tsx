@@ -41,10 +41,15 @@ const GlobalStyle = createGlobalStyle`
   --secondary-blue-color: #33D1EA;
 
   --primary-red-color: #FF2E57;
+  --secondary-red-color: #EF6D5C;
+
+  --primary-yellow-color: #FFB423;
+  --secondary-yellow-color: #F6BE50;
 
   --primary-green-color: #179690;
+  --secondary-green-color: #64C555;
 
-  --black-background: #000814;
+  --gray-background: #E5E4E3;
 
   // Fonts
   --regular-font: "Inter", sans-serif;
