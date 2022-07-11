@@ -1,4 +1,4 @@
-import { Like } from "@/assets/like"
+import { ThumbsUp } from "@/assets/ThumbsUp"
 import { FC } from "react"
 import styled from "styled-components"
 
@@ -30,10 +30,10 @@ const Circle = styled.div`
 export const Thumbs: FC = () => (
   <Container>
     <Circle>
-      <Like color="var(--primary-red-color)" />
+      <ThumbsUp color="var(--primary-red-color)" />
     </Circle>
     <Circle>
-      <Like color="var(--primary-green-color)" />
+      <ThumbsUp color="var(--primary-green-color)" />
     </Circle>
   </Container>
 )

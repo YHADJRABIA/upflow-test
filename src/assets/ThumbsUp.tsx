@@ -2,7 +2,7 @@ interface PropTypes {
   color?: string
 }
 
-export const Like = ({ color, ...rest }: PropTypes) => {
+export const ThumbsUp = ({ color, ...rest }: PropTypes) => {
   return (
     <svg
       width="40"
