@@ -41,7 +41,10 @@ const SEO: FC<PropTypes> = ({
       <meta property="og:type" content="website" />
       <meta
         property="og:image"
-        content={ogImage ?? "https://www.g2.com/products/upflow-upflow/reviews"}
+        content={
+          ogImage ??
+          "https://images.prismic.io/gocardless/00d748d8-ec98-4769-96c7-a78b4d0ec3a8_logo%406x.png?auto=compress,format"
+        }
       />
       <meta property="og:url" content={ogUrl ?? websiteUrl} />
       {children}
